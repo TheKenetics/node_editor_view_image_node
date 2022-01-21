@@ -39,6 +39,12 @@ class VIN_OT_view_image_node(Operator):
 			if area.type == "IMAGE_EDITOR":
 				area.spaces[0].image = context.active_object.active_material.node_tree.nodes.active.image
 				break
+		else:
+			# if for loop finishes without breaking, this else will be called
+			bpy.ops.screen.userpref_show('INVOKE_DEFAULT')
+			area = context.window_manager.windows[-1].screen.areas[0]
+			area.type = "IMAGE_EDITOR"
+			area.spaces[0].image = context.active_object.active_material.node_tree.nodes.active.image
 		return {'FINISHED'}
 
 
