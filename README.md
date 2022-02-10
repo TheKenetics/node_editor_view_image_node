@@ -1,7 +1,7 @@
 # node_editor_view_image_node
 A Blender addon to quickly view images from image nodes in Blender's image viewer.
 
-Note: Apparently, if you double-click an image node, it will open in an open Image Editor/UV Editor.
+Note: Apparently, if you double-click an image node, it will open in an open Image Editor/UV Editor.  
 This addon can still be useful, if double clicking doesn't work or if you would like to automatically open an image editor if one isn't open.
 
 ## Support
